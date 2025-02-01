@@ -29,37 +29,86 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+    
+    <style>
+        .contact-container {
+            max-width: 900px;
+            margin: auto;
+            padding: 20px;
+        }
+        .contact-info p {
+            margin-bottom: 10px;
+            font-size: 16px;
+        }
+        .contact-info i {
+            color: #007bff;
+            margin-right: 10px;
+        }
+        .form-container {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .form-container input, .form-container textarea {
+            width: 100%;
+            margin-bottom: 10px;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .form-container button {
+            background: #007bff;
+            color: white;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+            border-radius: 5px;
+        }
+        .form-container button:hover {
+            background: #0056b3;
+        }
+        .social-icons a {
+            font-size: 24px;
+            margin-right: 10px;
+            color: white;
+            transition: 0.3s;
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+            border-radius: 50%;
+            background: #007bff;
+        }
+        .social-icons a:hover {
+            background: #0056b3;
+        }
+    </style>
 </head>
 
 <body>
+
     <!-- Navbar Start -->
     <nav class="navbar navbar-expand-lg bg-white navbar-light shadow-sm py-3 py-lg-0 px-3 px-lg-0">
-    <a href="index.html" class="navbar-brand ms-lg-5">
-        <h1 class="display-5 m-0 text-primary">I SQUARE<span class="text-secondary">COMPUTERS</span></h1>
-    </a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarCollapse">
-        <div class="navbar-nav ms-auto py-0">
-            <a href="index.html" class="nav-item nav-link">Home</a>
-            <a href="about.html" class="nav-item nav-link">About</a>
-            <div class="nav-item dropdown">
-                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Services</a>
-                <div class="dropdown-menu m-0">
-                    <a href="service.html" class="dropdown-item">Our Services</a>
-                    <a href="blog.html" class="dropdown-item">Blog</a>
-                    <a href="testimonial.html" class="dropdown-item">Testimonial</a>
-                </div>
+        <a href="index.html" class="navbar-brand ms-lg-5">
+            <h1 class="display-5 m-0 text-primary">I SQUARE<span class="text-secondary">COMPUTERS</span></h1>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto py-0">
+                <a href="index.html" class="nav-item nav-link">Home</a>
+                <a href="about.html" class="nav-item nav-link">About</a>
+                <a href="service.html" class="nav-item nav-link">Services</a>
+                <a href="contact.html" class="nav-item nav-link active">Contact</a>
+                <a href="tel:+918867677031" class="nav-item nav-link nav-contact bg-secondary text-white px-5 ms-lg-5">
+                    <i class="bi bi-telephone-outbound me-2"></i>+91 88676 77031
+                </a>
             </div>
-            <a href="contact.html" class="nav-item nav-link">Contact</a>
-            <a href="tel:+918867677031" class="nav-item nav-link nav-contact bg-secondary text-white px-5 ms-lg-5">
-                <i class="bi bi-telephone-outbound me-2"></i>+91 88676 77031
-            </a>
         </div>
-    </div>
-</nav>
-
+    </nav>
     <!-- Navbar End -->
 
     <!-- Hero Start -->
@@ -73,67 +122,67 @@
     <!-- Hero End -->
 
     <!-- Contact Start -->
-    <div class="container py-5">
-        <div class="row">
-            <div class="col-lg-6">
-                <h2>Contact Information</h2>
-                <p><i class="bi bi-geo-alt text-primary me-2"></i>Mamas Joint Rd, MCC B Block, Kuvempu Nagar, Davanagere, Karnataka 577004</p>
-                <p><i class="bi bi-envelope text-primary me-2"></i>isquarecomputersdvg@gmail.com</p>
-                <p><i class="bi bi-telephone text-primary me-2"></i>+91 88676 77031</p>
-                <p><i class="bi bi-clock text-primary me-2"></i>Monday - Saturday: 9:00 AM - 7:00 PM</p>
+    <div class="container contact-container">
+        <div class="row g-4">
+            <!-- Contact Info -->
+            <div class="col-md-5 contact-info">
+                <h3>📞 Contact Information</h3>
+                <p><i class="bi bi-globe"></i> <a href="https://www.isquarecomputers.com" target="_blank" class="fw-bold">www.isquarecomputers.com</a></p>
+                <p><i class="bi bi-geo-alt"></i> Mamas Joint Rd, Kuvempu Nagar, Davanagere, Karnataka 577004</p>
+                <p><i class="bi bi-envelope"></i> isquarecomputersdvg@gmail.com</p>
+                <p><i class="bi bi-telephone"></i> +91 88676 77031</p>
+                <p><i class="bi bi-clock"></i> Mon - Sat: 9:00 AM - 7:00 PM</p>
+
+                <!-- Follow Us Section -->
+                <!-- Social Media Section -->
+            <div class="col-md-6 text-md-end">
+                <h3 class="follow-heading">📲 Follow Us</h3>
+                <a href="https://www.facebook.com/yourpage" target="_blank" class="social-icon">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://www.instagram.com/yourpage" target="_blank" class="social-icon">
+                    <i class="fab fa-instagram"></i>
+                </a>
             </div>
-           <div class="col-lg-6">
-    <h2>Get in Touch</h2>
-	<h4> Fill out the below form</h4>
-   <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfkf952JFCD-E0wieRnkPzG4z9FeOdz7IZs2onBtTDgpKEaqQ/viewform?embedded=true" width="640" height="689" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-		
-Loading…
-</iframe>
+            </div>
 
-
-</div>
-
-
-
+            <!-- Contact Form -->
+            <div class="col-md-7 form-container">
+                <h3>✉️ Get In Touch</h3>
+                <form id="contactForm">
+                    <input type="text" id="name" placeholder="Your Name" required>
+                    <input type="tel" id="mobile" placeholder="Mobile Number" required>
+                    <input type="email" id="email" placeholder="Email" required>
+                    <textarea id="message" placeholder="Your Message" required></textarea>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
         </div>
     </div>
     <!-- Contact End -->
 
-    <!-- Footer Start -->
-    <div class="container-fluid bg-dark text-light py-5">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <h3>Contact Us</h3>
-                    <p><i class="bi bi-geo-alt text-primary me-2"></i>Mamas Joint Rd, MCC B Block, Kuvempu Nagar, Davanagere, Karnataka 577004</p>
-                    <p><i class="bi bi-envelope text-primary me-2"></i>isquarecomputersdvg@gmail.com</p>
-                    <p><i class="bi bi-telephone text-primary me-2"></i>+91 88676 77031</p>
-                </div>
-                <div class="col-md-6 text-md-end">
-                    <h3>Follow Us</h3>
-                    <a href="#" class="btn btn-primary btn-lg-square me-2"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#" class="btn btn-primary btn-lg-square me-2"><i class="fab fa-twitter"></i></a>
-                    <a href="#" class="btn btn-primary btn-lg-square me-2"><i class="fab fa-linkedin-in"></i></a>
-                    <a href="#" class="btn btn-primary btn-lg-square"><i class="fab fa-instagram"></i></a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Footer End -->
+    <!-- JavaScript for Google Form Submission -->
+    <script>
+        document.getElementById("contactForm").addEventListener("submit", function(e) {
+            e.preventDefault();
 
-    <!-- Back to Top -->
-    <a href="#" class="btn btn-lg btn-secondary btn-lg-square rounded back-to-top"><i class="bi bi-arrow-up"></i></a>
+            // Google Form action URL
+            const formURL = "https://docs.google.com/forms/d/e/1FAIpQLSfkf952JFCD-E0wieRnkPzG4z9FeOdz7IZs2onBtTDgpKEaqQ/formResponse";
 
-    <!-- JavaScript Libraries -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="lib/wow/wow.min.js"></script>
-    <script src="lib/easing/easing.min.js"></script>
-    <script src="lib/waypoints/waypoints.min.js"></script>
-    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+            const formData = new FormData();
+            formData.append("entry.1429115989", document.getElementById("name").value);
+            formData.append("entry.167274395", document.getElementById("mobile").value);
+            formData.append("entry.1898276012", document.getElementById("email").value);
+            formData.append("entry.307555598", document.getElementById("message").value);
 
-    <!-- Template Javascript -->
-    <script src="js/main.js"></script>
+            fetch(formURL, { method: "POST", body: formData, mode: "no-cors" })
+                .then(() => {
+                    alert("Form submitted successfully!");
+                    document.getElementById("contactForm").reset();
+                })
+                .catch(error => console.error("Error!", error));
+        });
+    </script>
+
 </body>
-
 </html>

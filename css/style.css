@@ -290,3 +290,68 @@ h6,
 .img-fluid:hover {
     transform: scale(1.05);
 }
+
+
+.iso-certification {
+    background-color: #f8f9fa; /* Light gray background */
+    padding: 50px 0;
+}
+
+.iso-certification h2 {
+    color: #333;
+}
+
+.iso-certification ul {
+    font-size: 1.2rem;
+    line-height: 1.8;
+}
+
+.iso-certification h4 {
+    color: #007bff; /* Bootstrap primary color */
+}
+
+/* Ensure Contact Us is White & Stands Out */
+.contact-heading {
+    color: #FFFFFF !important; /* Force White Color */
+    font-weight: bold;
+    font-size: 1.8rem; /* Bigger Text */
+    margin-bottom: 15px;
+}
+
+/* Follow Us Heading - Bright Cyan */
+.follow-heading {
+    color: #00FFFF !important; /* Bright Cyan */
+    font-weight: bold;
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+}
+
+/* Website Link Styling */
+.website-link {
+    color: #FFA500; /* Bright Orange */
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+.website-link:hover {
+    color: #FF4500; /* Darker Orange on Hover */
+}
+
+/* Social Media Icons */
+.social-icon {
+    font-size: 2.5rem; /* Bigger icons */
+    color: #ffffff; /* White icons */
+    margin: 0 10px;
+    transition: color 0.3s ease-in-out;
+    text-decoration: none;
+}
+
+.social-icon:hover {
+    color: #007bff; /* Blue on Hover */
+}
+
+.form-container iframe {
+    width: 100%;
+    border: none;
+    overflow: hidden;
+}
+
