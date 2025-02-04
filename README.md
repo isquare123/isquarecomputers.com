@@ -1,2 +1,2 @@
-# isquaredvg.com
+# isquarcomputers.com
 company website
