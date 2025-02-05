@@ -355,4 +355,38 @@ h6,
     overflow: hidden;
 }
 
+/* Certificate Section Styling */
+.certificate-section {
+    background-color: #f8f9fa;
+    padding: 50px 0;
+}
+
+.certificate-heading {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #D32F2F; /* Red Color for Hikvision Theme */
+    margin-bottom: 10px;
+}
+
+.certificate-text {
+    font-size: 1.2rem;
+    color: #333;
+    max-width: 700px;
+    margin: 0 auto 20px;
+}
+
+.certificate-image {
+    max-width: 70%;
+    height: auto;
+    border: 5px solid #D32F2F; /* Red Border */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-bottom: 15px;
+}
+
+.certificate-validity {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #007bff;
+}
 
