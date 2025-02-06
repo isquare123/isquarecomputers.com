@@ -390,3 +390,116 @@ h6,
     color: #007bff;
 }
 
+/* Navbar Styling */
+.navbar {
+    padding: 8px 20px; /* Reduced height */
+    min-height: 60px; /* Compact look */
+}
+
+.navbar-brand h1 {
+    font-size: 1.8rem;
+    font-weight: 800; /* Increased boldness */
+    margin: 0;
+    white-space: nowrap;
+    letter-spacing: 0.5px;
+}
+
+/* Navbar Links */
+.navbar-light .navbar-nav .nav-link {
+    font-family: 'Jost', sans-serif;
+    position: relative;
+    margin-left: 30px;
+    padding: 20px 0; /* Adjusted for compact height */
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--dark);
+    outline: none;
+    transition: .5s;
+}
+
+.sticky-top.navbar-light .navbar-nav .nav-link {
+    padding: 15px 0;
+}
+
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar-light .navbar-nav .nav-link.active {
+    color: var(--primary);
+}
+
+/* Navbar Hover Effect */
+@media (min-width: 992px) {
+    .navbar-light .navbar-nav .nav-link::before {
+        position: absolute;
+        content: "";
+        width: 0;
+        height: 3px;
+        bottom: 0;
+        left: 50%;
+        background: var(--primary);
+        transition: .5s;
+    }
+
+    .navbar-light .navbar-nav .nav-link:hover::before,
+    .navbar-light .navbar-nav .nav-link.active::before {
+        width: 100%;
+        left: 0;
+    }
+
+    .navbar-light .navbar-nav .nav-link.nav-contact::before {
+        display: none;
+    }
+}
+
+/* Contact Button */
+.nav-contact {
+    background: #6c757d;
+    color: #ffffff;
+    border-radius: 5px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    padding: 6px 16px; /* Compact padding */
+    white-space: nowrap; /* Keeps in one line */
+    transition: background 0.3s ease-in-out;
+}
+
+.nav-contact i {
+    margin-right: 6px;
+}
+
+.nav-contact:hover {
+    background: #5a6268;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 991.98px) {
+    .navbar-light .navbar-nav .nav-link {
+        margin-left: 0;
+        padding: 10px 0;
+    }
+
+    .nav-contact {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar-brand h1 {
+        font-size: 1.5rem; /* Adjusted for smaller screens */
+    }
+
+    .navbar-toggler {
+        padding: 5px;
+        border: none;
+        outline: none;
+    }
+
+    .nav-contact {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+
+
