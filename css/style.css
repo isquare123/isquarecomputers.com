@@ -502,4 +502,67 @@ h6,
 }
 
 
+/* Top clients names scolling functionality */
+<style>
+    .client-scroll-wrapper {
+        overflow: hidden;
+        position: relative;
+        white-space: nowrap;
+        width: 100%;
+    }
+    .client-scroll {
+        display: flex;
+        animation: scrollClients 20s linear infinite;
+        transform: translateX(100%);
+    }
+    .client-item {
+        flex: 0 0 auto;
+        width: 250px;
+        margin: 0 15px;
+        text-align: center;
+    }
+    @keyframes scrollClients {
+        0% { transform: translateX(100%); }
+        100% { transform: translateX(-100%); }
+    }
+</style>
 
+<style>
+    .client-scroll-wrapper {
+        overflow: hidden;
+        position: relative;
+        width: 100%;
+        white-space: nowrap;
+        padding: 10px 0;
+    }
+    .client-scroll {
+        display: flex;
+        animation: scrollClients 50s linear infinite;
+        width: max-content;
+    }
+    .client-item {
+        flex: 0 0 auto;
+        width: 300px;
+        margin: 0 30px;
+        text-align: center;
+    }
+    .client-item img {
+        width: 100%;
+        max-height: 150px;
+        object-fit: contain;
+        margin-bottom: 10px;
+    }
+    .client-name {
+        font-size: 18px;
+        font-weight: bold;
+        white-space: normal;
+        overflow: visible;
+        text-overflow: unset;
+        max-width: 100%;
+        word-wrap: break-word;
+    }
+    @keyframes scrollClients {
+        0% { transform: translateX(0); }
+        100% { transform: translateX(-50%); }
+    }
+</style>
