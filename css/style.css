@@ -537,7 +537,7 @@ h6,
     }
     .client-scroll {
         display: flex;
-        animation: scrollClients 50s linear infinite;
+        animation: scrollClients 70s linear infinite;
         width: max-content;
     }
     .client-item {
